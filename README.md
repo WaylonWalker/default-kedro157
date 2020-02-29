@@ -1,5 +1,7 @@
 # Default Kedro 157
 
+![Kedro application](https://github.com/WaylonWalker/default-kedro157/workflows/Kedro%20application/badge.svg)
+
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.15.7` by running:
