@@ -31,6 +31,10 @@ jobs:
     - name: Test
       run: |
         kedro test
+    - name: Viz
+      run: |
+        pip install kedro-viz
+        kedro viz --save-file default-kedro157.json
     - name: Docs
       run: |
         kedro build-docs
