@@ -44,3 +44,12 @@ jobs:
     - name: Run
       run: |
         kedro run
+        
+    - uses: actions/upload-artifact@v1
+      with:
+        name: default-kedro157.json
+        path: default-kedro157.json
+    - uses: actions/upload-artifact@v1
+      with:
+        name: docs
+        path: docs
