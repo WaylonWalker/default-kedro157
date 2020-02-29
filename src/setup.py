@@ -28,9 +28,7 @@
 
 from setuptools import find_packages, setup
 
-entry_point = (
-    "default-kedro-157 = default_kedro_157.run:run_package"
-)
+entry_point = "default-kedro-157 = default_kedro_157.run:run_package"
 
 
 # get the dependencies and installs

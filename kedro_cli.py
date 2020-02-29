@@ -361,9 +361,7 @@ def build_docs(open_docs):
     """Build the project documentation."""
     python_call("pip", ["install", "src/[docs]"])
     python_call("pip", ["install", "-r", "src/requirements.txt"])
-    python_call(
-        "ipykernel", ["install", "--user", "--name=default_kedro_157"]
-    )
+    python_call("ipykernel", ["install", "--user", "--name=default_kedro_157"])
     shutil.rmtree("docs/build", ignore_errors=True)
     call(
         [

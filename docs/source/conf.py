@@ -189,13 +189,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (
-        master_doc,
-        "default_kedro_157",
-        "default_kedro_157 Documentation",
-        [author],
-        1,
-    )
+    (master_doc, "default_kedro_157", "default_kedro_157 Documentation", [author], 1,)
 ]
 
 # -- Options for Texinfo output ----------------------------------------------
