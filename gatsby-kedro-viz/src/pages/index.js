@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" />
-        <h1>default kedro pipeline</h1>
+        {/* <h1>default kedro pipeline</h1> */}
         <div className="pipeline" style={{ minHeight: '80vh' }}>
           {this.state.loaded === false ? 'loading' : <KedroViz style={{ height: '80vh' }} data={data} />}
         </div>
