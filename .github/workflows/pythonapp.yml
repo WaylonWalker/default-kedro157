@@ -60,7 +60,7 @@ jobs:
       with:
         name: docs
         path: docs
-      - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v1
       with:
         name: gatsby-kedro-viz
         path: gatsby-kedro-viz/public
