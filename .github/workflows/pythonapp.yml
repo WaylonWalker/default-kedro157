@@ -66,7 +66,7 @@ jobs:
         target_branch: gh-pages
         build_dir: gatsby-kedro-viz/public
       env:
-        GITHUB_PAT: fd573d46069cde5fb33a5b1099b4e8f952ffae52
+        GITHUB_PAT: f7061396c4cbd52523995bf5126b08d314841a031
 
       
     - uses: actions/upload-artifact@v1
