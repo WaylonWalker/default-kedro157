@@ -155,3 +155,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+docs/
+node_modules/
+.cache/
+public/
