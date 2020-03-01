@@ -44,7 +44,14 @@ jobs:
     - name: Run
       run: |
         kedro run
-        
+    - name: install npm
+      run: |
+        npm i -g gatsby-cli
+        cd gatsby-kedro-viz && npm install
+    - name: gatsby build
+      run: |
+        cd gatsby-kedro-viz && gatsby build
+      
     - uses: actions/upload-artifact@v1
       with:
         name: default-kedro157.json
@@ -53,3 +60,8 @@ jobs:
       with:
         name: docs
         path: docs
+      - uses: actions/upload-artifact@v1
+      with:
+        name: gatsby-kedro-viz
+        path: gatsby-kedro-viz/public
+ 
