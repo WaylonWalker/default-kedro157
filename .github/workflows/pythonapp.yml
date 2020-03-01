@@ -60,8 +60,8 @@ jobs:
       run: |
         cd gatsby-kedro-viz && gatsby build
     
-    -name: Deploy-viz 
-      uses: crazy-max/ghaction-github-pages@v1
+    - name: Deploy-viz 
+      uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
         target_branch: gh-pages
         build_dir: gatsby-kedro-viz/public
