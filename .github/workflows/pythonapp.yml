@@ -34,7 +34,7 @@ jobs:
     - name: Viz
       run: |
         pip install kedro-viz
-        kedro viz --save-file default-kedro157.json
+        kedro viz --save-file gatsby-kedro-viz/src/pages/default-kedro157.json
     - name: Docs
       run: |
         kedro build-docs
@@ -56,6 +56,8 @@ jobs:
       run: |
         npm i -g gatsby-cli
         cd gatsby-kedro-viz && npm install
+        
+               
     - name: gatsby build
       run: |
         cd gatsby-kedro-viz && gatsby build
@@ -72,7 +74,7 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: default-kedro157.json
-        path: default-kedro157.json
+        path: gatsby-kedro-viz/src/pages/default-kedro157.json
     - uses: actions/upload-artifact@v1
       with:
         name: docs
