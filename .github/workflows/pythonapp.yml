@@ -59,6 +59,13 @@ jobs:
     - name: gatsby build
       run: |
         cd gatsby-kedro-viz && gatsby build
+    
+    -name: Deploy-viz 
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        target_branch: gh-pages
+        build_dir: gatsby-kedro-viz/public
+
       
     - uses: actions/upload-artifact@v1
       with:
