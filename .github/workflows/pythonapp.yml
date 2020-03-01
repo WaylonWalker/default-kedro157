@@ -1,6 +1,6 @@
 name: Kedro application
 
-on: [push]
+# on: [push]
 
 jobs:
   build:
