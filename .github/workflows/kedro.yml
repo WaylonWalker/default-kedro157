@@ -1,0 +1,18 @@
+name: kedro
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: Kedro
+      uses: WaylonWalker/kedro-action
+      with:
+        python_version: '3.7.0'
