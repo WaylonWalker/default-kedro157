@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `black`,
-      marginBottom: `1.45rem`,
+      // marginBottom: `1.45rem`,
     }}
   >
     <div
@@ -27,6 +27,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <em>Made with Kedro v0.15.7</em><br />
+      using github actions <a href="https://github.com/WaylonWalker/default-kedro157">default-kedro157</a>
     </div>
   </header>
 )
