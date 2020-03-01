@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
       loaded: false
     }
     this.componentDidMount = () => {
-      this.setState({ loaded: false })
+      this.setState({ loaded: true })
 
     }
   }
