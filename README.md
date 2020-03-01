@@ -10,6 +10,8 @@ _for testing out github actions with kedro_
 
 [default-kedro-157.waylonwalker.com/](https://default-kedro-157.waylonwalker.com/)
 
+![default-kedro157-viz.png](default-kedro157-viz.png)
+
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.15.7` by running:
