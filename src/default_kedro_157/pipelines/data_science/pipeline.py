@@ -51,5 +51,6 @@ def create_pipeline(**kwargs):
                 "example_predictions",
             ),
             node(report_accuracy, ["example_predictions", "example_test_y"], None),
+            node(lambda x: x, 'example_test_y', None, name='Test Add Node'),
         ]
     )
