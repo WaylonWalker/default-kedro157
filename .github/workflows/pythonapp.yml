@@ -116,10 +116,12 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
         target_branch: gh-pages-docs
-        build_dir: docs
+        build_dir: docs/build/html
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-      
+
+# STORE ARTIFACTS
+
     - uses: actions/upload-artifact@v1
       with:
         name: default-kedro157.json
