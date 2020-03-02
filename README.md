@@ -4,7 +4,9 @@ _for testing out github actions with kedro_
 
 ![Kedro application](https://github.com/WaylonWalker/default-kedro157/workflows/Kedro%20application/badge.svg)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a2545a6c-4c84-4530-a9fe-8747db5a073b/deploy-status)](https://app.netlify.com/sites/default-kedro157/deploys)
+[![viz Status](https://api.netlify.com/api/v1/badges/a2545a6c-4c84-4530-a9fe-8747db5a073b/deploy-status)](https://app.netlify.com/sites/default-kedro157/deploys)
+
+[![docs Status](https://api.netlify.com/api/v1/badges/dde08c74-b7a9-448d-9678-d2684792be24/deploy-status)](https://app.netlify.com/sites/default-kedro157-docs/deploys)
 
 ## Vizualization Deployed
 
@@ -12,6 +14,10 @@ _for testing out github actions with kedro_
 
 ![default-kedro157-viz.png](default-kedro157-viz.png)
 
+
+## Docs Deployed
+
+[default-kedro-157-docs.waylonwalker.com/](https://default-kedro-157-docs.waylonwalker.com/)
 ## Overview
 
 This is your new Kedro project, which was generated using `Kedro 0.15.7` by running:
