@@ -81,6 +81,13 @@ jobs:
     - name: Docs
       run: |
         kedro build-docs
+    - name: Deploy-docs
+      uses: crazy-max/ghaction-github-pages@v1.3.0
+      with:
+        target_branch: gh-pages-docs
+        build_dir: docs/build/html
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
     - name: Package
       run: |
         kedro package
@@ -113,13 +120,7 @@ jobs:
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
-    - name: Deploy-docs
-      uses: crazy-max/ghaction-github-pages@v1.3.0
-      with:
-        target_branch: gh-pages-docs
-        build_dir: docs/build/html
-      env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+
 
 # STORE ARTIFACTS
 
