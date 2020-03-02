@@ -3,10 +3,8 @@ name: Kedro application
 on: [push]
 
 jobs:
-  build:
-
+  setup_python:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7
@@ -37,18 +35,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
           
-# CACHE NODE
-#     - name: Get npm cache directory
-#       id: npm-cache
-#       run: |
-#         echo "::set-output name=dir::$(npm config get cache)"
-#     - uses: actions/cache@v1
-#       with:
-#         path: ${{ steps.npm-cache.outputs.dir }}
-#         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-#         restore-keys: |
-#           ${{ runner.os }}-node-      
-      
     - name: Install kedro library
       run: |
         python -m pip install --upgrade pip
@@ -64,9 +50,19 @@ jobs:
         # flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         # flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        
+  kedro_test:
+    needs: setup_python
+    runs-on: ubuntu-latest
+    steps:
     - name: Test
       run: |
         kedro test
+        
+  kedro_viz:
+    needs: [setup_python, kedro_test]
+    runs-on: ubuntu-latest
+    steps:
     - name: Viz
       run: |
         pip install kedro-viz
@@ -78,6 +74,11 @@ jobs:
 #         pip install kedro-docker
 #         kedro docker build
 
+
+  kedro_build_docs:
+    needs: [setup_python, kedro_test]
+    runs-on: ubuntu-latest
+    steps:
     - name: Docs
       run: |
         kedro build-docs
@@ -88,13 +89,26 @@ jobs:
         build_dir: docs/build/html
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        
+  kedro_package:
+    needs: [setup_python, kedro_test]
+    runs-on: ubuntu-latest
+    steps:
     - name: Package
       run: |
         kedro package
+        
+  kedro_run_pipeline:
+    needs: [setup_python, kedro_test]
+    runs-on: ubuntu-latest
+    steps:
     - name: Run
       run: |
         kedro run
         
+  setup_node: 
+    runs-on: ubuntu-latest
+    steps:
     - name: Use Node.js 13.x
       uses: actions/setup-node@v1
       with:
@@ -107,7 +121,10 @@ jobs:
         npm i -g gatsby-cli
         cd gatsby-kedro-viz && npm install
         
-               
+  build_viz:
+    needs: [setup_python, setup_node, kedro_test]
+    runs-on: ubuntu-latest
+    steps:        
     - name: gatsby build
       run: |
         cd gatsby-kedro-viz && gatsby build
@@ -121,9 +138,11 @@ jobs:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
 
-
 # STORE ARTIFACTS
-
+  store_artifacts:
+    needs: [setup_python, setup_node, kedro_test, kedro_viz, kedro_build_docs, kedro_package]
+    runs-on: ubuntu-latest
+    steps:    
     - uses: actions/upload-artifact@v1
       with:
         name: default-kedro157.json
