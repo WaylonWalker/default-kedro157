@@ -19,7 +19,8 @@ jobs:
       with:
         target_branch: gh-pages-docs
         build_dir: docs/build/html
-
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
 
 #### Manual
