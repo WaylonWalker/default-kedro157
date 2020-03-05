@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Kedro
-      uses: WaylonWalker/kedro-action@1.0.1
+      uses: WaylonWalker/kedro-action@50cad931a23952c91831d6f3933d6181c635b28a
 
 
 #### Manual
