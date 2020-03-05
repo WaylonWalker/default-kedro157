@@ -8,7 +8,6 @@ Viz: [![viz Status](https://api.netlify.com/api/v1/badges/a2545a6c-4c84-4530-a9f
 
 Docs: [![docs Status](https://api.netlify.com/api/v1/badges/dde08c74-b7a9-448d-9678-d2684792be24/deploy-status)](https://app.netlify.com/sites/default-kedro157-docs/deploys)
 
-
 ## ⚡ Fully automated actions
 
 * test
