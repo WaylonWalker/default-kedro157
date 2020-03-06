@@ -13,12 +13,17 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Kedro
-      uses: WaylonWalker/kedro-action@0169de4
+      uses: WaylonWalker/kedro-action@55b1f7a
     - name: Deploy-docs
       uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
         target_branch: gh-pages-docs
         build_dir: docs/build/html
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      with:
+        target_branch: gh-pages-viz
+        build_dir: kedro-static-viz
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
