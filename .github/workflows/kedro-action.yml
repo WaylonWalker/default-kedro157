@@ -21,11 +21,11 @@ jobs:
         build_dir: docs/build/html
       env:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+    - name: Deploy-viz
+      uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
         target_branch: gh-pages-viz
         build_dir: kedro-static-viz
-      env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
 
 #### Manual
