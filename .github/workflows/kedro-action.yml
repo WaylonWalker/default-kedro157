@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Kedro
-      uses: WaylonWalker/kedro-action@3cf7a31
+      uses: WaylonWalker/kedro-action@666cc38
     - name: Deploy-docs
       uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
