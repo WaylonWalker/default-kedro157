@@ -26,6 +26,8 @@ jobs:
       with:
         target_branch: gh-pages-viz
         build_dir: kedro-static-viz
+    env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
 
 
 #### Manual
