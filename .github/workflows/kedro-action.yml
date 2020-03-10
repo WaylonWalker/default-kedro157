@@ -18,7 +18,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Kedro
       uses: WaylonWalker/kedro-action@develop
-      verbose: true
+      with:
+        verbose: true
     - name: Deploy-docs
       uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
