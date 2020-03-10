@@ -1,10 +1,14 @@
 name: kedro
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
+on:
+  watch:
+    types: [ started ]
+    
 jobs:
   kedro:
 
@@ -13,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Kedro
-      uses: WaylonWalker/kedro-action@a0614a2
+      uses: WaylonWalker/kedro-action@develop
     - name: Deploy-docs
       uses: crazy-max/ghaction-github-pages@v1.3.0
       with:
