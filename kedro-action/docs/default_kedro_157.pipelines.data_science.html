@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>default_kedro_157.pipelines.data_science package &mdash; default_kedro_157 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="/root/.pyenv/versions/3.7.0/lib/python3.7/site-packages/kedro/html/_static/css/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="/root/.pyenv/versions/3.7.0/lib/python3.7/site-packages/kedro/html/_static/css/qb1-sphinx-rtd.css" type="text/css" />
+  <link rel="stylesheet" href="/root/.pyenv/versions/3.7.0/lib/python3.7/site-packages/kedro/html/_static/css/theme-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="default_kedro_157.pipelines.data_engineering package" href="default_kedro_157.pipelines.data_engineering.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> default_kedro_157
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">default_kedro_157</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="default_kedro_157.html">default_kedro_157 package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="default_kedro_157.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="default_kedro_157.nodes.html">default_kedro_157.nodes package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="default_kedro_157.pipelines.html">default_kedro_157.pipelines package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="default_kedro_157.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="default_kedro_157.html#module-default_kedro_157.pipeline">default_kedro_157.pipeline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="default_kedro_157.html#module-default_kedro_157.run">default_kedro_157.run module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">default_kedro_157</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">default_kedro_157</a> &raquo;</li>
+        
+          <li><a href="default_kedro_157.html">default_kedro_157 package</a> &raquo;</li>
+        
+          <li><a href="default_kedro_157.pipelines.html">default_kedro_157.pipelines package</a> &raquo;</li>
+        
+      <li>default_kedro_157.pipelines.data_science package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="module-default_kedro_157.pipelines.data_science">
+<span id="default-kedro-157-pipelines-data-science-package"></span><h1>default_kedro_157.pipelines.data_science package<a class="headerlink" href="#module-default_kedro_157.pipelines.data_science" title="Permalink to this headline">¶</a></h1>
+<p>Example code for the nodes in the example pipeline. This code is meant
+just for illustrating basic Kedro features.</p>
+<p>PLEASE DELETE THIS FILE ONCE YOU START WORKING ON YOUR OWN PROJECT!</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-default_kedro_157.pipelines.data_science.nodes">
+<span id="default-kedro-157-pipelines-data-science-nodes-module"></span><h2>default_kedro_157.pipelines.data_science.nodes module<a class="headerlink" href="#module-default_kedro_157.pipelines.data_science.nodes" title="Permalink to this headline">¶</a></h2>
+<p>Example code for the nodes in the example pipeline. This code is meant
+just for illustrating basic Kedro features.</p>
+<p>Delete this when you start working on your own Kedro project.</p>
+<dl class="function">
+<dt id="default_kedro_157.pipelines.data_science.nodes.predict">
+<code class="descclassname">default_kedro_157.pipelines.data_science.nodes.</code><code class="descname">predict</code><span class="sig-paren">(</span><em>model</em>, <em>test_x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/default_kedro_157/pipelines/data_science/nodes.html#predict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#default_kedro_157.pipelines.data_science.nodes.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Node for making predictions given a pre-trained model and a test set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="default_kedro_157.pipelines.data_science.nodes.report_accuracy">
+<code class="descclassname">default_kedro_157.pipelines.data_science.nodes.</code><code class="descname">report_accuracy</code><span class="sig-paren">(</span><em>predictions</em>, <em>test_y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/default_kedro_157/pipelines/data_science/nodes.html#report_accuracy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#default_kedro_157.pipelines.data_science.nodes.report_accuracy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Node for reporting the accuracy of the predictions performed by the
+previous node. Notice that this function has no outputs, except logging.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">None</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="default_kedro_157.pipelines.data_science.nodes.train_model">
+<code class="descclassname">default_kedro_157.pipelines.data_science.nodes.</code><code class="descname">train_model</code><span class="sig-paren">(</span><em>train_x</em>, <em>train_y</em>, <em>parameters</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/default_kedro_157/pipelines/data_science/nodes.html#train_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#default_kedro_157.pipelines.data_science.nodes.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Node for training a simple multi-class logistic regression model. The
+number of training iterations as well as the learning rate are taken from
+conf/project/parameters.yml. All of the data as well as the parameters
+will be provided to this function at the time of execution.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-default_kedro_157.pipelines.data_science.pipeline">
+<span id="default-kedro-157-pipelines-data-science-pipeline-module"></span><h2>default_kedro_157.pipelines.data_science.pipeline module<a class="headerlink" href="#module-default_kedro_157.pipelines.data_science.pipeline" title="Permalink to this headline">¶</a></h2>
+<p>Example code for the nodes in the example pipeline. This code is meant
+just for illustrating basic Kedro features.</p>
+<p>Delete this when you start working on your own Kedro project.</p>
+<dl class="function">
+<dt id="default_kedro_157.pipelines.data_science.pipeline.create_pipeline">
+<code class="descclassname">default_kedro_157.pipelines.data_science.pipeline.</code><code class="descname">create_pipeline</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/default_kedro_157/pipelines/data_science/pipeline.html#create_pipeline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#default_kedro_157.pipelines.data_science.pipeline.create_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="default_kedro_157.pipelines.data_engineering.html" class="btn btn-neutral" title="default_kedro_157.pipelines.data_engineering package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, QuantumBlack Visual Analytics Limited.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+default\_kedro\_157.pipelines package
+=====================================
+
+.. automodule:: default_kedro_157.pipelines
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    default_kedro_157.pipelines.data_engineering
+    default_kedro_157.pipelines.data_science
+

@@ -1,0 +1,28 @@
+default\_kedro\_157.pipelines.data\_engineering package
+=======================================================
+
+.. automodule:: default_kedro_157.pipelines.data_engineering
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+default\_kedro\_157.pipelines.data\_engineering.nodes module
+------------------------------------------------------------
+
+.. automodule:: default_kedro_157.pipelines.data_engineering.nodes
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+default\_kedro\_157.pipelines.data\_engineering.pipeline module
+---------------------------------------------------------------
+
+.. automodule:: default_kedro_157.pipelines.data_engineering.pipeline
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
