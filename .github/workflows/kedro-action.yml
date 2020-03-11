@@ -20,6 +20,7 @@ jobs:
       uses: WaylonWalker/kedro-action@develop
       with:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        verbose: true
 
 #     - name: Deploy-docs
 #       uses: crazy-max/ghaction-github-pages@v1.3.0
