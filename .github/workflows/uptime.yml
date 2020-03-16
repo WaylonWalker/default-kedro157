@@ -1,3 +1,4 @@
+name: check if site is up
 on:
   schedule:
     - cron: '* * * * *'
