@@ -1,7 +1,7 @@
 name: check if site is up
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   ping_site:
