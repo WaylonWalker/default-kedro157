@@ -1,6 +1,10 @@
 {
     "edges": [
         {
+            "source": "40cc0777",
+            "target": "a3b63a49"
+        },
+        {
             "source": "f7b62b1a",
             "target": "76ddffce"
         },
@@ -62,6 +66,13 @@
         }
     ],
     "nodes": [
+        {
+            "full_name": "<lambda>",
+            "id": "a3b63a49",
+            "name": "Test Add Node",
+            "tags": [],
+            "type": "task"
+        },
         {
             "full_name": "predict",
             "id": "76ddffce",
