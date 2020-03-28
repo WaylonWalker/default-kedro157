@@ -20,5 +20,5 @@ jobs:
       uses: WaylonWalker/kedro-action@develop
       with:
         GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-        verbose: false
+        verbose: true
 
