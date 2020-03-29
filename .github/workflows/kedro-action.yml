@@ -11,17 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - uses: actions/cache@v1
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('src/requirements.txt') }}
     - name: Kedro
       uses: WaylonWalker/kedro-action@develop
       with:
         GITHUB_PAT: ${{ secrets.REPO_ONLY_PAT }}
-    - name: show kedro
-      run: pip show kedro
-    - name: show pip
-      run: pip list -v
-#         verbose: true
 
