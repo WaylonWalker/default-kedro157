@@ -19,5 +19,9 @@ jobs:
       uses: WaylonWalker/kedro-action@develop
       with:
         GITHUB_PAT: ${{ secrets.REPO_ONLY_PAT }}
+    - name: ls pip
+      run: ls ~/.pip
+    - name: show kedro
+      run: pip show kedro
 #         verbose: true
 
