@@ -19,6 +19,6 @@ jobs:
     - name: Kedro
       uses: WaylonWalker/kedro-action@develop
       with:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+        GITHUB_PAT: ${{ secrets.REPO_ONLY_PAT }}
 #         verbose: true
 
