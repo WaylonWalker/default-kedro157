@@ -1,0 +1,64 @@
+Collecting pytest-html
+  Downloading pytest_html-2.1.1-py2.py3-none-any.whl (16 kB)
+Collecting pytest>=5.0
+  Downloading pytest-5.4.1-py3-none-any.whl (246 kB)
+Collecting pytest-metadata
+  Downloading pytest_metadata-1.8.0-py2.py3-none-any.whl (9.5 kB)
+Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (19.3.0)
+Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (8.2.0)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (0.1.9)
+Requirement already satisfied: pluggy<1.0,>=0.12 in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (0.13.1)
+Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (1.8.1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python3.7/site-packages (from pytest>=5.0->pytest-html) (1.6.0)
+Collecting packaging
+  Downloading packaging-20.3-py2.py3-none-any.whl (37 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest>=5.0->pytest-html) (3.1.0)
+Requirement already satisfied: six in /usr/local/lib/python3.7/site-packages (from packaging->pytest>=5.0->pytest-html) (1.14.0)
+Collecting pyparsing>=2.0.2
+  Downloading pyparsing-2.4.6-py2.py3-none-any.whl (67 kB)
+Installing collected packages: pyparsing, packaging, pytest, pytest-metadata, pytest-html
+  Attempting uninstall: pytest
+    Found existing installation: pytest 3.10.1
+    Uninstalling pytest-3.10.1:
+      Successfully uninstalled pytest-3.10.1
+Successfully installed packaging-20.3 pyparsing-2.4.6 pytest-5.4.1 pytest-html-2.1.1 pytest-metadata-1.8.0
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/kedro/cli/cli.py", line 594, in load_entry_points
+    entry_point_commands.append(entry_point.load())
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2445, in load
+    self.require(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2468, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 792, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.VersionConflict: (python-dateutil 2.8.1 (/usr/local/lib/python3.7/site-packages), Requirement.parse('python-dateutil==2.8.0'))
+Error: Loading global commands from kedro-viz = kedro_viz.server:commands
+============================= test session starts ==============================
+platform linux -- Python 3.7.7, pytest-5.4.1, py-1.8.1, pluggy-0.13.1
+rootdir: /github/workspace, inifile: setup.cfg
+plugins: cov-2.8.1, html-2.1.1, mock-1.13.0, metadata-1.8.0
+collected 2 items
+
+src/tests/test_run.py ..                                                 [100%]
+
+- generated html file: file:///github/home/kedro-action/test-report/index.html -
+
+----------- coverage: platform linux, python 3.7.7-final-0 -----------
+Name                                                           Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------------------
+src/default_kedro_157/__init__.py                                  2      0   100%
+src/default_kedro_157/nodes/__init__.py                            0      0   100%
+src/default_kedro_157/pipeline.py                                  9      3    67%   58-61
+src/default_kedro_157/pipelines/__init__.py                        0      0   100%
+src/default_kedro_157/pipelines/data_engineering/__init__.py       2      0   100%
+src/default_kedro_157/pipelines/data_engineering/nodes.py         17     13    24%   46-73
+src/default_kedro_157/pipelines/data_engineering/pipeline.py       5      1    80%   41
+src/default_kedro_157/pipelines/data_science/__init__.py           2      0   100%
+src/default_kedro_157/pipelines/data_science/nodes.py             36     27    25%   51-75, 81-91, 99-104, 109
+src/default_kedro_157/pipelines/data_science/pipeline.py           5      1    80%   41
+src/default_kedro_157/run.py                                      16      4    75%   48, 54-55, 61
+--------------------------------------------------------------------------------------------
+TOTAL                                                             94     49    48%
+
+============================== 2 passed in 0.92s ===============================
+/usr/local/bin/python -m pytest '--html=~/kedro-action/test-report/index.html'

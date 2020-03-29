@@ -1,3 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/kedro/cli/cli.py", line 594, in load_entry_points
+    entry_point_commands.append(entry_point.load())
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2445, in load
+    self.require(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2468, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 792, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.VersionConflict: (python-dateutil 2.8.1 (/usr/local/lib/python3.7/site-packages), Requirement.parse('python-dateutil==2.8.0'))
+Error: Loading global commands from kedro-viz = kedro_viz.server:commands
 2020-03-29 16:12:02,557 - root - INFO - ** Kedro project workspace
 2020-03-29 16:12:02,576 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (CSVLocalDataSet)...
 2020-03-29 16:12:02,581 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
@@ -27,3 +38,8 @@
 2020-03-29 16:12:03,177 - default_kedro_157.pipelines.data_science.nodes - INFO - Model accuracy on test set: 86.67%
 2020-03-29 16:12:03,177 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
 2020-03-29 16:12:03,178 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+/usr/local/lib/python3.7/site-packages/kedro/context/context.py:341: UserWarning: Credentials not found in your Kedro project config.
+No files found in ['/github/workspace/conf/base', '/github/workspace/conf/local'] matching the glob pattern(s): ['credentials*', 'credentials*/**']
+  str(exc)
+/usr/local/lib/python3.7/site-packages/kedro/io/core.py:682: DeprecationWarning: CSVLocalDataSet will be deprecated in future releases. Please refer to replacement datasets in kedro.extras.datasets.
+  DeprecationWarning,

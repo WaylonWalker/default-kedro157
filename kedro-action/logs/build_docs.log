@@ -1,0 +1,347 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/kedro/cli/cli.py", line 594, in load_entry_points
+    entry_point_commands.append(entry_point.load())
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2445, in load
+    self.require(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2468, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 792, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.VersionConflict: (python-dateutil 2.8.1 (/usr/local/lib/python3.7/site-packages), Requirement.parse('python-dateutil==2.8.0'))
+Error: Loading global commands from kedro-viz = kedro_viz.server:commands
+Processing ./src
+Requirement already satisfied: ipython<8.0,>=7.0.0 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (7.13.0)
+Requirement already satisfied: jupyter<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (1.0.0)
+Requirement already satisfied: jupyter_client<6.0,>=5.1.0 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (5.3.4)
+Requirement already satisfied: jupyterlab==0.31.1 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (0.31.1)
+Requirement already satisfied: kedro==0.15.7 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (0.15.7)
+Requirement already satisfied: kedro-viz<4.0,>=3.1.0 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (3.2.0)
+Requirement already satisfied: nbstripout==0.3.3 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (0.3.3)
+Requirement already satisfied: pytest-cov<3.0,>=2.5 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (2.8.1)
+Requirement already satisfied: pytest-mock<2.0,>=1.7.1 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (1.13.0)
+Collecting pytest<4.0,>=3.4
+  Downloading pytest-3.10.1-py2.py3-none-any.whl (216 kB)
+Requirement already satisfied: wheel==0.32.2 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (0.32.2)
+Requirement already satisfied: flake8 in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (3.7.9)
+Requirement already satisfied: isort in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (4.3.21)
+Requirement already satisfied: black in /usr/local/lib/python3.7/site-packages (from default-kedro-157==0.1) (19.10b0)
+Collecting sphinx<2.0,>=1.6.3
+  Downloading Sphinx-1.8.5-py2.py3-none-any.whl (3.1 MB)
+Collecting sphinx_rtd_theme==0.4.1
+  Downloading sphinx_rtd_theme-0.4.1-py2.py3-none-any.whl (5.4 MB)
+Collecting nbsphinx==0.3.4
+  Downloading nbsphinx-0.3.4-py2.py3-none-any.whl (18 kB)
+Collecting recommonmark==0.5.0
+  Downloading recommonmark-0.5.0-py2.py3-none-any.whl (9.8 kB)
+Collecting sphinx-autodoc-typehints==1.6.0
+  Downloading sphinx_autodoc_typehints-1.6.0-py3-none-any.whl (6.4 kB)
+Collecting sphinx_copybutton==0.2.5
+  Downloading sphinx_copybutton-0.2.5-py2.py3-none-any.whl (9.3 kB)
+Collecting tornado<6.0,>=4.2
+  Downloading tornado-5.1.1.tar.gz (516 kB)
+Collecting ipykernel<5.0,>=4.8.1
+  Downloading ipykernel-4.10.1-py3-none-any.whl (109 kB)
+Requirement already satisfied: setuptools>=18.5 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (46.0.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (3.0.5)
+Requirement already satisfied: decorator in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (4.4.2)
+Requirement already satisfied: pexpect; sys_platform != "win32" in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (4.8.0)
+Requirement already satisfied: pygments in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (2.6.1)
+Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.7.5)
+Requirement already satisfied: backcall in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.1.0)
+Requirement already satisfied: jedi>=0.10 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.16.0)
+Requirement already satisfied: traitlets>=4.2 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->default-kedro-157==0.1) (4.3.3)
+Requirement already satisfied: qtconsole in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (4.7.2)
+Requirement already satisfied: notebook in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (6.0.3)
+Requirement already satisfied: ipywidgets in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (7.5.1)
+Requirement already satisfied: nbconvert in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (5.6.1)
+Requirement already satisfied: jupyter-console in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (6.1.0)
+Requirement already satisfied: jupyter-core>=4.6.0 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->default-kedro-157==0.1) (4.6.3)
+Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->default-kedro-157==0.1) (2.8.1)
+Requirement already satisfied: pyzmq>=13 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->default-kedro-157==0.1) (19.0.0)
+Requirement already satisfied: jupyterlab-launcher<0.11.0,>=0.10.0 in /usr/local/lib/python3.7/site-packages (from jupyterlab==0.31.1->default-kedro-157==0.1) (0.10.5)
+Requirement already satisfied: ipython-genutils in /usr/local/lib/python3.7/site-packages (from jupyterlab==0.31.1->default-kedro-157==0.1) (0.2.0)
+Requirement already satisfied: pyarrow<1.0.0,>=0.12.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.16.0)
+Requirement already satisfied: requests<3.0,>=2.20.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (2.23.0)
+Requirement already satisfied: toposort<2.0,>=1.5 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (1.5)
+Requirement already satisfied: cookiecutter<2.0,>=1.6.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (1.7.0)
+Requirement already satisfied: xlrd<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (1.2.0)
+Requirement already satisfied: anyconfig<1.0,>=0.9.7 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.9.10)
+Requirement already satisfied: fsspec<1.0,>=0.5.1 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.7.0)
+Requirement already satisfied: pandas<1.0,>=0.24.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.25.3)
+Requirement already satisfied: s3fs<1.0,>=0.3.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.4.1)
+Requirement already satisfied: tables<3.6,>=3.4.4 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (3.5.2)
+Requirement already satisfied: pip-tools<5.0.0,>=4.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (4.5.1)
+Requirement already satisfied: python-json-logger<1.0,>=0.1.9 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (0.1.11)
+Requirement already satisfied: xlsxwriter<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (1.2.8)
+Requirement already satisfied: click<8.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (7.1.1)
+Requirement already satisfied: SQLAlchemy<2.0,>=1.2.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (1.3.15)
+Requirement already satisfied: PyYAML<6.0,>=4.2 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->default-kedro-157==0.1) (5.3.1)
+Requirement already satisfied: semver<3.0.0,>=2.0.0 in /usr/local/lib/python3.7/site-packages (from kedro-viz<4.0,>=3.1.0->default-kedro-157==0.1) (2.9.1)
+Requirement already satisfied: Flask<2.0,>=1.0 in /usr/local/lib/python3.7/site-packages (from kedro-viz<4.0,>=3.1.0->default-kedro-157==0.1) (1.1.1)
+Requirement already satisfied: nbformat in /usr/local/lib/python3.7/site-packages (from nbstripout==0.3.3->default-kedro-157==0.1) (5.0.4)
+Requirement already satisfied: coverage>=4.4 in /usr/local/lib/python3.7/site-packages (from pytest-cov<3.0,>=2.5->default-kedro-157==0.1) (5.0.4)
+Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (1.8.1)
+Requirement already satisfied: atomicwrites>=1.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (1.3.0)
+Requirement already satisfied: pluggy>=0.7 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (0.13.1)
+Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (19.3.0)
+Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (8.2.0)
+Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->default-kedro-157==0.1) (1.14.0)
+Requirement already satisfied: entrypoints<0.4.0,>=0.3.0 in /usr/local/lib/python3.7/site-packages (from flake8->default-kedro-157==0.1) (0.3)
+Requirement already satisfied: pycodestyle<2.6.0,>=2.5.0 in /usr/local/lib/python3.7/site-packages (from flake8->default-kedro-157==0.1) (2.5.0)
+Requirement already satisfied: mccabe<0.7.0,>=0.6.0 in /usr/local/lib/python3.7/site-packages (from flake8->default-kedro-157==0.1) (0.6.1)
+Requirement already satisfied: pyflakes<2.2.0,>=2.1.0 in /usr/local/lib/python3.7/site-packages (from flake8->default-kedro-157==0.1) (2.1.1)
+Requirement already satisfied: typed-ast>=1.4.0 in /usr/local/lib/python3.7/site-packages (from black->default-kedro-157==0.1) (1.4.1)
+Requirement already satisfied: pathspec<1,>=0.6 in /usr/local/lib/python3.7/site-packages (from black->default-kedro-157==0.1) (0.7.0)
+Requirement already satisfied: regex in /usr/local/lib/python3.7/site-packages (from black->default-kedro-157==0.1) (2020.2.20)
+Requirement already satisfied: appdirs in /usr/local/lib/python3.7/site-packages (from black->default-kedro-157==0.1) (1.4.3)
+Requirement already satisfied: toml>=0.9.4 in /usr/local/lib/python3.7/site-packages (from black->default-kedro-157==0.1) (0.10.0)
+Collecting sphinxcontrib-websupport
+  Downloading sphinxcontrib_websupport-1.2.1-py2.py3-none-any.whl (39 kB)
+Requirement already satisfied: packaging in /usr/local/lib/python3.7/site-packages (from sphinx<2.0,>=1.6.3->default-kedro-157==0.1) (20.3)
+Collecting babel!=2.0,>=1.3
+  Downloading Babel-2.8.0-py2.py3-none-any.whl (8.6 MB)
+Requirement already satisfied: Jinja2>=2.3 in /usr/local/lib/python3.7/site-packages (from sphinx<2.0,>=1.6.3->default-kedro-157==0.1) (2.11.1)
+Requirement already satisfied: docutils>=0.11 in /usr/local/lib/python3.7/site-packages (from sphinx<2.0,>=1.6.3->default-kedro-157==0.1) (0.15.2)
+Collecting snowballstemmer>=1.1
+  Downloading snowballstemmer-2.0.0-py2.py3-none-any.whl (97 kB)
+Collecting imagesize
+  Downloading imagesize-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting alabaster<0.8,>=0.7
+  Downloading alabaster-0.7.12-py2.py3-none-any.whl (14 kB)
+Collecting commonmark>=0.7.3
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.1.9)
+Requirement already satisfied: ptyprocess>=0.5 in /usr/local/lib/python3.7/site-packages (from pexpect; sys_platform != "win32"->ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.6.0)
+Requirement already satisfied: parso>=0.5.2 in /usr/local/lib/python3.7/site-packages (from jedi>=0.10->ipython<8.0,>=7.0.0->default-kedro-157==0.1) (0.6.2)
+Requirement already satisfied: qtpy in /usr/local/lib/python3.7/site-packages (from qtconsole->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (1.9.0)
+Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (1.5.0)
+Requirement already satisfied: prometheus-client in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.7.1)
+Requirement already satisfied: terminado>=0.8.1 in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.8.3)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /usr/local/lib/python3.7/site-packages (from ipywidgets->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (3.5.1)
+Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.6.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (1.4.2)
+Requirement already satisfied: bleach in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (3.1.4)
+Requirement already satisfied: mistune<2,>=0.8.1 in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.8.4)
+Requirement already satisfied: testpath in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.4.4)
+Requirement already satisfied: jsonschema>=2.6.0 in /usr/local/lib/python3.7/site-packages (from jupyterlab-launcher<0.11.0,>=0.10.0->jupyterlab==0.31.1->default-kedro-157==0.1) (3.2.0)
+Requirement already satisfied: numpy>=1.14 in /usr/local/lib/python3.7/site-packages (from pyarrow<1.0.0,>=0.12.0->kedro==0.15.7->default-kedro-157==0.1) (1.18.2)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->default-kedro-157==0.1) (2019.11.28)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->default-kedro-157==0.1) (1.25.8)
+Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->default-kedro-157==0.1) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->default-kedro-157==0.1) (2.9)
+Requirement already satisfied: jinja2-time>=0.1.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.2.0)
+Requirement already satisfied: binaryornot>=0.2.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.4.4)
+Requirement already satisfied: future>=0.15.2 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.18.2)
+Requirement already satisfied: whichcraft>=0.4.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.6.1)
+Requirement already satisfied: poyo>=0.1.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.5.0)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.7/site-packages (from pandas<1.0,>=0.24.0->kedro==0.15.7->default-kedro-157==0.1) (2019.3)
+Requirement already satisfied: botocore>=1.12.91 in /usr/local/lib/python3.7/site-packages (from s3fs<1.0,>=0.3.0->kedro==0.15.7->default-kedro-157==0.1) (1.15.31)
+Requirement already satisfied: mock>=2.0 in /usr/local/lib/python3.7/site-packages (from tables<3.6,>=3.4.4->kedro==0.15.7->default-kedro-157==0.1) (4.0.2)
+Requirement already satisfied: numexpr>=2.6.2 in /usr/local/lib/python3.7/site-packages (from tables<3.6,>=3.4.4->kedro==0.15.7->default-kedro-157==0.1) (2.7.1)
+Requirement already satisfied: Werkzeug>=0.15 in /usr/local/lib/python3.7/site-packages (from Flask<2.0,>=1.0->kedro-viz<4.0,>=3.1.0->default-kedro-157==0.1) (1.0.0)
+Requirement already satisfied: itsdangerous>=0.24 in /usr/local/lib/python3.7/site-packages (from Flask<2.0,>=1.0->kedro-viz<4.0,>=3.1.0->default-kedro-157==0.1) (1.1.0)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python3.7/site-packages (from pluggy>=0.7->pytest<4.0,>=3.4->default-kedro-157==0.1) (1.6.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /usr/local/lib/python3.7/site-packages (from packaging->sphinx<2.0,>=1.6.3->default-kedro-157==0.1) (2.4.6)
+Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/site-packages (from Jinja2>=2.3->sphinx<2.0,>=1.6.3->default-kedro-157==0.1) (1.1.1)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.7/site-packages (from bleach->nbconvert->jupyter<2.0,>=1.0.0->default-kedro-157==0.1) (0.5.1)
+Requirement already satisfied: pyrsistent>=0.14.0 in /usr/local/lib/python3.7/site-packages (from jsonschema>=2.6.0->jupyterlab-launcher<0.11.0,>=0.10.0->jupyterlab==0.31.1->default-kedro-157==0.1) (0.16.0)
+Requirement already satisfied: arrow in /usr/local/lib/python3.7/site-packages (from jinja2-time>=0.1.0->cookiecutter<2.0,>=1.6.0->kedro==0.15.7->default-kedro-157==0.1) (0.15.5)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.7/site-packages (from botocore>=1.12.91->s3fs<1.0,>=0.3.0->kedro==0.15.7->default-kedro-157==0.1) (0.9.5)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pluggy>=0.7->pytest<4.0,>=3.4->default-kedro-157==0.1) (3.1.0)
+Building wheels for collected packages: default-kedro-157, tornado
+  Building wheel for default-kedro-157 (setup.py): started
+  Building wheel for default-kedro-157 (setup.py): finished with status 'done'
+  Created wheel for default-kedro-157: filename=default_kedro_157-0.1-py3-none-any.whl size=14303 sha256=53ba41f130131357e3e68baca686e3b1b1251384d3417a4ce59f9565800f86b7
+  Stored in directory: /tmp/pip-ephem-wheel-cache-huxhhe8j/wheels/e3/69/9d/f0eb83a88e28f1b3e70985f0337e5b4b13620e930e1f86cb2a
+  Building wheel for tornado (setup.py): started
+  Building wheel for tornado (setup.py): finished with status 'done'
+  Created wheel for tornado: filename=tornado-5.1.1-cp37-cp37m-linux_x86_64.whl size=463623 sha256=82c9425d09de94b7f67ce5b5161df9f4d1f43b823d972387d838e170306442a0
+  Stored in directory: /github/home/.cache/pip/wheels/83/91/4b/ee8ffb993d3372fc4129c52c9140792c118dda0373b41e7a8f
+Successfully built default-kedro-157 tornado
+ERROR: pytest-html 2.1.1 has requirement pytest>=5.0, but you'll have pytest 3.10.1 which is incompatible.
+Installing collected packages: pytest, sphinxcontrib-websupport, babel, snowballstemmer, imagesize, alabaster, sphinx, sphinx-rtd-theme, nbsphinx, commonmark, recommonmark, sphinx-autodoc-typehints, sphinx-copybutton, tornado, ipykernel, default-kedro-157
+  Attempting uninstall: pytest
+    Found existing installation: pytest 5.4.1
+    Uninstalling pytest-5.4.1:
+      Successfully uninstalled pytest-5.4.1
+  Attempting uninstall: tornado
+    Found existing installation: tornado 6.0.4
+    Uninstalling tornado-6.0.4:
+      Successfully uninstalled tornado-6.0.4
+  Attempting uninstall: ipykernel
+    Found existing installation: ipykernel 5.2.0
+    Uninstalling ipykernel-5.2.0:
+      Successfully uninstalled ipykernel-5.2.0
+Successfully installed alabaster-0.7.12 babel-2.8.0 commonmark-0.9.1 default-kedro-157-0.1 imagesize-1.2.0 ipykernel-4.10.1 nbsphinx-0.3.4 pytest-3.10.1 recommonmark-0.5.0 snowballstemmer-2.0.0 sphinx-1.8.5 sphinx-autodoc-typehints-1.6.0 sphinx-copybutton-0.2.5 sphinx-rtd-theme-0.4.1 sphinxcontrib-websupport-1.2.1 tornado-5.1.1
+Requirement already satisfied: ipython<8.0,>=7.0.0 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 1)) (7.13.0)
+Requirement already satisfied: jupyter<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 2)) (1.0.0)
+Requirement already satisfied: jupyter_client<6.0,>=5.1.0 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 3)) (5.3.4)
+Requirement already satisfied: jupyterlab==0.31.1 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 4)) (0.31.1)
+Requirement already satisfied: kedro==0.15.7 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 5)) (0.15.7)
+Requirement already satisfied: kedro-viz<4.0,>=3.1.0 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 6)) (3.2.0)
+Requirement already satisfied: nbstripout==0.3.3 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 7)) (0.3.3)
+Requirement already satisfied: pytest-cov<3.0,>=2.5 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 8)) (2.8.1)
+Requirement already satisfied: pytest-mock<2.0,>=1.7.1 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 9)) (1.13.0)
+Requirement already satisfied: pytest<4.0,>=3.4 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 10)) (3.10.1)
+Requirement already satisfied: wheel==0.32.2 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 11)) (0.32.2)
+Requirement already satisfied: flake8 in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 12)) (3.7.9)
+Requirement already satisfied: isort in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 13)) (4.3.21)
+Requirement already satisfied: black in /usr/local/lib/python3.7/site-packages (from -r src/requirements.txt (line 14)) (19.10b0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (3.0.5)
+Requirement already satisfied: pygments in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (2.6.1)
+Requirement already satisfied: decorator in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (4.4.2)
+Requirement already satisfied: pexpect; sys_platform != "win32" in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (4.8.0)
+Requirement already satisfied: backcall in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.1.0)
+Requirement already satisfied: jedi>=0.10 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.16.0)
+Requirement already satisfied: traitlets>=4.2 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (4.3.3)
+Requirement already satisfied: setuptools>=18.5 in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (46.0.0)
+Requirement already satisfied: pickleshare in /usr/local/lib/python3.7/site-packages (from ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.7.5)
+Requirement already satisfied: ipywidgets in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (7.5.1)
+Requirement already satisfied: notebook in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (6.0.3)
+Requirement already satisfied: nbconvert in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (5.6.1)
+Requirement already satisfied: ipykernel in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (4.10.1)
+Requirement already satisfied: jupyter-console in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (6.1.0)
+Requirement already satisfied: qtconsole in /usr/local/lib/python3.7/site-packages (from jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (4.7.2)
+Requirement already satisfied: jupyter-core>=4.6.0 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->-r src/requirements.txt (line 3)) (4.6.3)
+Requirement already satisfied: python-dateutil>=2.1 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->-r src/requirements.txt (line 3)) (2.8.1)
+Requirement already satisfied: tornado>=4.1 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->-r src/requirements.txt (line 3)) (5.1.1)
+Requirement already satisfied: pyzmq>=13 in /usr/local/lib/python3.7/site-packages (from jupyter_client<6.0,>=5.1.0->-r src/requirements.txt (line 3)) (19.0.0)
+Requirement already satisfied: jupyterlab-launcher<0.11.0,>=0.10.0 in /usr/local/lib/python3.7/site-packages (from jupyterlab==0.31.1->-r src/requirements.txt (line 4)) (0.10.5)
+Requirement already satisfied: ipython-genutils in /usr/local/lib/python3.7/site-packages (from jupyterlab==0.31.1->-r src/requirements.txt (line 4)) (0.2.0)
+Requirement already satisfied: requests<3.0,>=2.20.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (2.23.0)
+Requirement already satisfied: xlrd<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (1.2.0)
+Requirement already satisfied: click<8.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (7.1.1)
+Requirement already satisfied: cookiecutter<2.0,>=1.6.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (1.7.0)
+Requirement already satisfied: PyYAML<6.0,>=4.2 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (5.3.1)
+Requirement already satisfied: pip-tools<5.0.0,>=4.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (4.5.1)
+Requirement already satisfied: fsspec<1.0,>=0.5.1 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.7.0)
+Requirement already satisfied: SQLAlchemy<2.0,>=1.2.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (1.3.15)
+Requirement already satisfied: xlsxwriter<2.0,>=1.0.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (1.2.8)
+Requirement already satisfied: s3fs<1.0,>=0.3.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.4.1)
+Requirement already satisfied: toposort<2.0,>=1.5 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (1.5)
+Requirement already satisfied: tables<3.6,>=3.4.4 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (3.5.2)
+Requirement already satisfied: pandas<1.0,>=0.24.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.25.3)
+Requirement already satisfied: pyarrow<1.0.0,>=0.12.0 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.16.0)
+Requirement already satisfied: anyconfig<1.0,>=0.9.7 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.9.10)
+Requirement already satisfied: python-json-logger<1.0,>=0.1.9 in /usr/local/lib/python3.7/site-packages (from kedro==0.15.7->-r src/requirements.txt (line 5)) (0.1.11)
+Requirement already satisfied: Flask<2.0,>=1.0 in /usr/local/lib/python3.7/site-packages (from kedro-viz<4.0,>=3.1.0->-r src/requirements.txt (line 6)) (1.1.1)
+Requirement already satisfied: semver<3.0.0,>=2.0.0 in /usr/local/lib/python3.7/site-packages (from kedro-viz<4.0,>=3.1.0->-r src/requirements.txt (line 6)) (2.9.1)
+Requirement already satisfied: nbformat in /usr/local/lib/python3.7/site-packages (from nbstripout==0.3.3->-r src/requirements.txt (line 7)) (5.0.4)
+Requirement already satisfied: coverage>=4.4 in /usr/local/lib/python3.7/site-packages (from pytest-cov<3.0,>=2.5->-r src/requirements.txt (line 8)) (5.0.4)
+Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (1.14.0)
+Requirement already satisfied: pluggy>=0.7 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (0.13.1)
+Requirement already satisfied: atomicwrites>=1.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (1.3.0)
+Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (8.2.0)
+Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (19.3.0)
+Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.7/site-packages (from pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (1.8.1)
+Requirement already satisfied: pyflakes<2.2.0,>=2.1.0 in /usr/local/lib/python3.7/site-packages (from flake8->-r src/requirements.txt (line 12)) (2.1.1)
+Requirement already satisfied: mccabe<0.7.0,>=0.6.0 in /usr/local/lib/python3.7/site-packages (from flake8->-r src/requirements.txt (line 12)) (0.6.1)
+Requirement already satisfied: entrypoints<0.4.0,>=0.3.0 in /usr/local/lib/python3.7/site-packages (from flake8->-r src/requirements.txt (line 12)) (0.3)
+Requirement already satisfied: pycodestyle<2.6.0,>=2.5.0 in /usr/local/lib/python3.7/site-packages (from flake8->-r src/requirements.txt (line 12)) (2.5.0)
+Requirement already satisfied: appdirs in /usr/local/lib/python3.7/site-packages (from black->-r src/requirements.txt (line 14)) (1.4.3)
+Requirement already satisfied: pathspec<1,>=0.6 in /usr/local/lib/python3.7/site-packages (from black->-r src/requirements.txt (line 14)) (0.7.0)
+Requirement already satisfied: regex in /usr/local/lib/python3.7/site-packages (from black->-r src/requirements.txt (line 14)) (2020.2.20)
+Requirement already satisfied: typed-ast>=1.4.0 in /usr/local/lib/python3.7/site-packages (from black->-r src/requirements.txt (line 14)) (1.4.1)
+Requirement already satisfied: toml>=0.9.4 in /usr/local/lib/python3.7/site-packages (from black->-r src/requirements.txt (line 14)) (0.10.0)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.1.9)
+Requirement already satisfied: ptyprocess>=0.5 in /usr/local/lib/python3.7/site-packages (from pexpect; sys_platform != "win32"->ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.6.0)
+Requirement already satisfied: parso>=0.5.2 in /usr/local/lib/python3.7/site-packages (from jedi>=0.10->ipython<8.0,>=7.0.0->-r src/requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /usr/local/lib/python3.7/site-packages (from ipywidgets->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (3.5.1)
+Requirement already satisfied: prometheus-client in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.7.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (2.11.1)
+Requirement already satisfied: terminado>=0.8.1 in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.8.3)
+Requirement already satisfied: Send2Trash in /usr/local/lib/python3.7/site-packages (from notebook->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (1.5.0)
+Requirement already satisfied: bleach in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (3.1.4)
+Requirement already satisfied: pandocfilters>=1.4.1 in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (1.4.2)
+Requirement already satisfied: testpath in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.4.4)
+Requirement already satisfied: mistune<2,>=0.8.1 in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.8.4)
+Requirement already satisfied: defusedxml in /usr/local/lib/python3.7/site-packages (from nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.6.0)
+Requirement already satisfied: qtpy in /usr/local/lib/python3.7/site-packages (from qtconsole->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (1.9.0)
+Requirement already satisfied: jsonschema>=2.6.0 in /usr/local/lib/python3.7/site-packages (from jupyterlab-launcher<0.11.0,>=0.10.0->jupyterlab==0.31.1->-r src/requirements.txt (line 4)) (3.2.0)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (1.25.8)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (2.9)
+Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/site-packages (from requests<3.0,>=2.20.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (2019.11.28)
+Requirement already satisfied: poyo>=0.1.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.5.0)
+Requirement already satisfied: whichcraft>=0.4.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.6.1)
+Requirement already satisfied: jinja2-time>=0.1.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.2.0)
+Requirement already satisfied: future>=0.15.2 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.18.2)
+Requirement already satisfied: binaryornot>=0.2.0 in /usr/local/lib/python3.7/site-packages (from cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.4.4)
+Requirement already satisfied: botocore>=1.12.91 in /usr/local/lib/python3.7/site-packages (from s3fs<1.0,>=0.3.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (1.15.31)
+Requirement already satisfied: mock>=2.0 in /usr/local/lib/python3.7/site-packages (from tables<3.6,>=3.4.4->kedro==0.15.7->-r src/requirements.txt (line 5)) (4.0.2)
+Requirement already satisfied: numpy>=1.9.3 in /usr/local/lib/python3.7/site-packages (from tables<3.6,>=3.4.4->kedro==0.15.7->-r src/requirements.txt (line 5)) (1.18.2)
+Requirement already satisfied: numexpr>=2.6.2 in /usr/local/lib/python3.7/site-packages (from tables<3.6,>=3.4.4->kedro==0.15.7->-r src/requirements.txt (line 5)) (2.7.1)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.7/site-packages (from pandas<1.0,>=0.24.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (2019.3)
+Requirement already satisfied: itsdangerous>=0.24 in /usr/local/lib/python3.7/site-packages (from Flask<2.0,>=1.0->kedro-viz<4.0,>=3.1.0->-r src/requirements.txt (line 6)) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.15 in /usr/local/lib/python3.7/site-packages (from Flask<2.0,>=1.0->kedro-viz<4.0,>=3.1.0->-r src/requirements.txt (line 6)) (1.0.0)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python3.7/site-packages (from pluggy>=0.7->pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (1.6.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/site-packages (from jinja2->notebook->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (1.1.1)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.7/site-packages (from bleach->nbconvert->jupyter<2.0,>=1.0.0->-r src/requirements.txt (line 2)) (0.5.1)
+Requirement already satisfied: pyrsistent>=0.14.0 in /usr/local/lib/python3.7/site-packages (from jsonschema>=2.6.0->jupyterlab-launcher<0.11.0,>=0.10.0->jupyterlab==0.31.1->-r src/requirements.txt (line 4)) (0.16.0)
+Requirement already satisfied: arrow in /usr/local/lib/python3.7/site-packages (from jinja2-time>=0.1.0->cookiecutter<2.0,>=1.6.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.15.5)
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in /usr/local/lib/python3.7/site-packages (from botocore>=1.12.91->s3fs<1.0,>=0.3.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.9.5)
+Requirement already satisfied: docutils<0.16,>=0.10 in /usr/local/lib/python3.7/site-packages (from botocore>=1.12.91->s3fs<1.0,>=0.3.0->kedro==0.15.7->-r src/requirements.txt (line 5)) (0.15.2)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pluggy>=0.7->pytest<4.0,>=3.4->-r src/requirements.txt (line 10)) (3.1.0)
+Installed kernelspec default_kedro_157 in /github/home/.local/share/jupyter/kernels/default_kedro_157
+Creating file docs/source/default_kedro_157.rst.
+Creating file docs/source/default_kedro_157.nodes.rst.
+Creating file docs/source/default_kedro_157.pipelines.rst.
+Creating file docs/source/default_kedro_157.pipelines.data_engineering.rst.
+Creating file docs/source/default_kedro_157.pipelines.data_science.rst.
+Creating file docs/source/modules.rst.
+Running Sphinx v1.8.5
+Adding copy buttons to code blocks...
+making output directory...
+building [mo]: all of 0 po files
+building [html]: all source files
+updating environment: 7 added, 0 changed, 0 removed
+reading sources... [ 14%] default_kedro_157
+reading sources... [ 28%] default_kedro_157.nodes
+reading sources... [ 42%] default_kedro_157.pipelines
+reading sources... [ 57%] default_kedro_157.pipelines.data_engineering
+reading sources... [ 71%] default_kedro_157.pipelines.data_science
+reading sources... [ 85%] index
+reading sources... [100%] modules
+
+/usr/local/lib/python3.7/site-packages/tornado/httputil.py:107: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  class HTTPHeaders(collections.MutableMapping):
+/usr/local/lib/python3.7/site-packages/sphinx/ext/napoleon/docstring.py:123: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  elif isinstance(obj, collections.Callable):  # type: ignore
+/github/workspace/docs/source/index.rst:6: WARNING: Title underline too short.
+
+Welcome to project's default_kedro_157 API docs!
+=============================================
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 14%] default_kedro_157
+writing output... [ 28%] default_kedro_157.nodes
+writing output... [ 42%] default_kedro_157.pipelines
+writing output... [ 57%] default_kedro_157.pipelines.data_engineering
+writing output... [ 71%] default_kedro_157.pipelines.data_science
+writing output... [ 85%] index
+writing output... [100%] modules
+
+generating indices... genindex py-modindex
+highlighting module code... [ 16%] default_kedro_157.pipeline
+highlighting module code... [ 33%] default_kedro_157.pipelines.data_engineering.nodes
+highlighting module code... [ 50%] default_kedro_157.pipelines.data_engineering.pipeline
+highlighting module code... [ 66%] default_kedro_157.pipelines.data_science.nodes
+highlighting module code... [ 83%] default_kedro_157.pipelines.data_science.pipeline
+highlighting module code... [100%] default_kedro_157.run
+
+writing additional pages... search
+copying static files... WARNING: html_static_path entry '/github/workspace/docs/source/_static' does not exist
+done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 2 warnings.
+
+The HTML pages are in docs/build/html.
+/usr/local/bin/python -m pip install 'src/[docs]'
+/usr/local/bin/python -m pip install -r src/requirements.txt
+/usr/local/bin/python -m ipykernel install --user --name=default_kedro_157
+sphinx-apidoc --module-first -o docs/source src/default_kedro_157
+sphinx-build -M html docs/source docs/build -a

@@ -1,0 +1,166 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/kedro/cli/cli.py", line 594, in load_entry_points
+    entry_point_commands.append(entry_point.load())
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2445, in load
+    self.require(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2468, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+  File "/usr/local/lib/python3.7/site-packages/pkg_resources/__init__.py", line 792, in resolve
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.VersionConflict: (python-dateutil 2.8.1 (/usr/local/lib/python3.7/site-packages), Requirement.parse('python-dateutil==2.8.0'))
+Error: Loading global commands from kedro-viz = kedro_viz.server:commands
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.7' does not exist -- can't clean it
+running bdist_egg
+running egg_info
+creating default_kedro_157.egg-info
+writing default_kedro_157.egg-info/PKG-INFO
+writing dependency_links to default_kedro_157.egg-info/dependency_links.txt
+writing entry points to default_kedro_157.egg-info/entry_points.txt
+writing requirements to default_kedro_157.egg-info/requires.txt
+writing top-level names to default_kedro_157.egg-info/top_level.txt
+writing manifest file 'default_kedro_157.egg-info/SOURCES.txt'
+reading manifest file 'default_kedro_157.egg-info/SOURCES.txt'
+writing manifest file 'default_kedro_157.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/default_kedro_157
+copying default_kedro_157/pipeline.py -> build/lib/default_kedro_157
+copying default_kedro_157/__init__.py -> build/lib/default_kedro_157
+copying default_kedro_157/run.py -> build/lib/default_kedro_157
+creating build/lib/default_kedro_157/pipelines
+copying default_kedro_157/pipelines/__init__.py -> build/lib/default_kedro_157/pipelines
+creating build/lib/default_kedro_157/nodes
+copying default_kedro_157/nodes/__init__.py -> build/lib/default_kedro_157/nodes
+creating build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/pipeline.py -> build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/__init__.py -> build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/nodes.py -> build/lib/default_kedro_157/pipelines/data_engineering
+creating build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/pipeline.py -> build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/__init__.py -> build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/nodes.py -> build/lib/default_kedro_157/pipelines/data_science
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/default_kedro_157
+creating build/bdist.linux-x86_64/egg/default_kedro_157/pipelines
+creating build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/pipeline.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/__init__.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/nodes.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/__init__.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines
+creating build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/pipeline.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/__init__.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/nodes.py -> build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipeline.py -> build/bdist.linux-x86_64/egg/default_kedro_157
+copying build/lib/default_kedro_157/__init__.py -> build/bdist.linux-x86_64/egg/default_kedro_157
+copying build/lib/default_kedro_157/run.py -> build/bdist.linux-x86_64/egg/default_kedro_157
+creating build/bdist.linux-x86_64/egg/default_kedro_157/nodes
+copying build/lib/default_kedro_157/nodes/__init__.py -> build/bdist.linux-x86_64/egg/default_kedro_157/nodes
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering/pipeline.py to pipeline.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_engineering/nodes.py to nodes.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science/pipeline.py to pipeline.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipelines/data_science/nodes.py to nodes.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/pipeline.py to pipeline.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/__init__.py to __init__.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/run.py to run.cpython-37.pyc
+byte-compiling build/bdist.linux-x86_64/egg/default_kedro_157/nodes/__init__.py to __init__.cpython-37.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying default_kedro_157.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/default_kedro_157-0.1-py3.7.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+running clean
+removing 'build/lib' (and everything under it)
+removing 'build/bdist.linux-x86_64' (and everything under it)
+'build/scripts-3.7' does not exist -- can't clean it
+removing 'build'
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/default_kedro_157
+copying default_kedro_157/pipeline.py -> build/lib/default_kedro_157
+copying default_kedro_157/__init__.py -> build/lib/default_kedro_157
+copying default_kedro_157/run.py -> build/lib/default_kedro_157
+creating build/lib/default_kedro_157/pipelines
+copying default_kedro_157/pipelines/__init__.py -> build/lib/default_kedro_157/pipelines
+creating build/lib/default_kedro_157/nodes
+copying default_kedro_157/nodes/__init__.py -> build/lib/default_kedro_157/nodes
+creating build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/pipeline.py -> build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/__init__.py -> build/lib/default_kedro_157/pipelines/data_engineering
+copying default_kedro_157/pipelines/data_engineering/nodes.py -> build/lib/default_kedro_157/pipelines/data_engineering
+creating build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/pipeline.py -> build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/__init__.py -> build/lib/default_kedro_157/pipelines/data_science
+copying default_kedro_157/pipelines/data_science/nodes.py -> build/lib/default_kedro_157/pipelines/data_science
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/default_kedro_157
+creating build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines
+creating build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/pipeline.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/__init__.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/data_engineering/nodes.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_engineering
+copying build/lib/default_kedro_157/pipelines/__init__.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines
+creating build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/pipeline.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/__init__.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipelines/data_science/nodes.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/pipelines/data_science
+copying build/lib/default_kedro_157/pipeline.py -> build/bdist.linux-x86_64/wheel/default_kedro_157
+copying build/lib/default_kedro_157/__init__.py -> build/bdist.linux-x86_64/wheel/default_kedro_157
+copying build/lib/default_kedro_157/run.py -> build/bdist.linux-x86_64/wheel/default_kedro_157
+creating build/bdist.linux-x86_64/wheel/default_kedro_157/nodes
+copying build/lib/default_kedro_157/nodes/__init__.py -> build/bdist.linux-x86_64/wheel/default_kedro_157/nodes
+running install_egg_info
+running egg_info
+writing default_kedro_157.egg-info/PKG-INFO
+writing dependency_links to default_kedro_157.egg-info/dependency_links.txt
+writing entry points to default_kedro_157.egg-info/entry_points.txt
+writing requirements to default_kedro_157.egg-info/requires.txt
+writing top-level names to default_kedro_157.egg-info/top_level.txt
+reading manifest file 'default_kedro_157.egg-info/SOURCES.txt'
+writing manifest file 'default_kedro_157.egg-info/SOURCES.txt'
+Copying default_kedro_157.egg-info to build/bdist.linux-x86_64/wheel/default_kedro_157-0.1-py3.7.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/default_kedro_157-0.1.dist-info/WHEEL
+creating 'dist/default_kedro_157-0.1-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'default_kedro_157/__init__.py'
+adding 'default_kedro_157/pipeline.py'
+adding 'default_kedro_157/run.py'
+adding 'default_kedro_157/nodes/__init__.py'
+adding 'default_kedro_157/pipelines/__init__.py'
+adding 'default_kedro_157/pipelines/data_engineering/__init__.py'
+adding 'default_kedro_157/pipelines/data_engineering/nodes.py'
+adding 'default_kedro_157/pipelines/data_engineering/pipeline.py'
+adding 'default_kedro_157/pipelines/data_science/__init__.py'
+adding 'default_kedro_157/pipelines/data_science/nodes.py'
+adding 'default_kedro_157/pipelines/data_science/pipeline.py'
+adding 'default_kedro_157-0.1.dist-info/METADATA'
+adding 'default_kedro_157-0.1.dist-info/WHEEL'
+adding 'default_kedro_157-0.1.dist-info/entry_points.txt'
+adding 'default_kedro_157-0.1.dist-info/top_level.txt'
+adding 'default_kedro_157-0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+/usr/local/bin/python setup.py clean --all bdist_egg
+/usr/local/bin/python setup.py clean --all bdist_wheel
