@@ -1,1 +1,0 @@
-{"type": "ContextJournalRecord", "run_id": "2020-03-29T13.23.26.576Z", "project_path": "/github/workspace", "env": "local", "kedro_version": "0.15.7", "tags": [], "from_nodes": [], "to_nodes": [], "node_names": [], "from_inputs": [], "load_versions": {}, "pipeline_name": null, "extra_params": {}, "git_sha": "928879a"}
