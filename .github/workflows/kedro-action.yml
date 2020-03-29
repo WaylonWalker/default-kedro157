@@ -1,13 +1,8 @@
 name: kedro
 
-# on:
-#   push:
-#     branches:
-#       - master
-
 on:
-  watch:
-    types: [ started ]
+  push
+
     
 jobs:
   kedro:
